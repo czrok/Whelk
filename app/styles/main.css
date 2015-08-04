@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(40, 42, 36);
+  color: rgb(245, 245, 245);
+}
+
+[contenteditable]:focus { outline: 0px solid transparent; }
+
+whelk-output-info, whelk-shell-output, whelk-shell-input, whelk-process-info{
+  font-family: monospace;
+  font-weight: bold;
+}
+whelk-shell-output {
+  white-space: pre;
+}
+whelk-shell-input {
+}
+whelk-process-info {
+}
+
+.command {
+  color: rgba(245, 245, 245, .6);
+}
+
+.user-info {
+  color: rgb(118, 190, 12);
+}

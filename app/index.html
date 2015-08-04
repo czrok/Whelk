@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="whelk">
+  <head>
+    <title>Whelk</title>
+    <link href="styles/main.css" rel="stylesheet"></link>
+  </head>
+  <body ng-controller="WhelkCtrl">
+    <div ng-repeat="message in messages track by $index">
+      <whelk-output-info></whelk-output-info>
+      <whelk-shell-output></whelk-shell-output>
+    </div>
+    <div>
+      <whelk-process-info></whelk-process-info><whelk-shell-input></whelk-shell-input>
+    </div>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="bower_components/angular-contenteditable/angular-contenteditable.js"></script>
+
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/filters/trim.js"></script>
+    <script src="scripts/directives/whelk-process-info.js"></script>
+    <script src="scripts/directives/whelk-shell-input.js"></script>
+    <script src="scripts/directives/whelk-output-info.js"></script>
+    <script src="scripts/directives/whelk-shell-output.js"></script>
+  </body>
+</html>
